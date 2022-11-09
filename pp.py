@@ -11,7 +11,7 @@ class fooPrinter:
 import gdb.printing
 
 def build_pretty_printer():
-    pp = gdb.printing.RegexpCollectionPrettyPrinter("my_library")
+    pp = gdb.printing.RegexpCollectionPrettyPrinter("foo")
     pp.add_printer('foo', '^foo$', fooPrinter)
     return pp
 
