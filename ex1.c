@@ -9,7 +9,7 @@ main(void)
 {
     for (int i = 0; i < 10240; i++)
     {
-        i = bar(i);
+        i += bar(i);
     }
 
     return 0;
